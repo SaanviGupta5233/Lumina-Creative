@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: 1.6;
+}
+
+:root {
+  --primary-color: #fcf5e9;
+  --dark-color: #333;
+  --container-normal: 1100px;
+  --container-wide: 1400px;
+  --container-narrow: 900px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Container */
+.container {
+  max-width: var(--container-normal);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-lg {
+  max-width: var(--container-wide);
+}
+
+.container-sm {
+  max-width: var(--container-narrow);
+}
+
+/* Header */
+
+.header {
+  margin: 1.5rem auto;
+}
+
+.header .logo {
+  width: 130px;
+}
+
+.header .header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .main-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.header .main-menu a {
+  padding: 0.7rem 1rem;
+}
+
+.header .main-menu a:hover {
+  background: var(--primary-color);
+}
+
+.current {
+  background: var(--primary-color);
+  font-weight: 550;
+}
+
+/* body area */
+
+.heading {
+  margin-top: 12rem;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.4;
+  max-width: var(--container-narrow);
+}
+
+.hero {
+  max-width: auto;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.passionate {
+  background-color: var(--primary-color);
+  color: #333;
+}
+
+.yo {
+  padding: 0 0.3rem;
+}
+
+.gallery-item {
+  width: calc(33.333% - 20px);
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  border-radius: 8px;
+}
+
+.gallery-item img:hover {
+  opacity: 0.9;
+}
+
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+/* Footer */
+
+hr {
+  margin-top: 2rem;
+}
+
+.footer {
+  padding: 2rem 2rem;
+}
+
+.footer .footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-flex .logo-2 {
+  width: 120px;
+  height: 35px;
+}
+
+.footer a {
+  margin: 0.2rem;
+}
+
+/* About Page */
+
+/* Services */
+
+.services {
+  background-color: #333;
+  color: #fff;
+  padding: 3rem 0 4rem;
+  margin-top: 12rem;
+}
+
+.container .section-heading {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.container .services-flex {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.services-item h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+/* Team */
+
+.team {
+  padding: 3rem 0 4rem;
+}
+
+.team-flex {
+  display: flex;
+  gap: 1.4rem;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.container-sm h2 {
+  padding-bottom: 100px;
+}
+
+/* Contact Page */
+
+.contact {
+  padding: 3rem 0 4rem;
+}
+.contact .section-heading {
+  padding-bottom: 0;
+}
+
+.container-sm p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin: 2rem;
+}
+
+.contact input,
+.contact textarea {
+  border: none;
+  border-bottom: 1px #333 solid;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding-bottom: 1rem;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.contact textarea {
+  height: 200px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #333;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.contact button {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header-flex,
+  .services .services-flex,
+  .team .team-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading {
+    font-size: 30px;
+    margin-top: 120px;
+  }
+
+  .gallery-item {
+    width: calc(50% - 20px);
+  }
+
+  .gallery-flex {
+    margin-top: 100px;
+  }
+
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-flex .logo-2 {
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    margin-bottom: 20px;
+  }
+}
